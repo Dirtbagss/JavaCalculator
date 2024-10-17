@@ -4,6 +4,7 @@ public class Calculator {
 
     private AbstractOperation operation;
 
+    // 계산결과를 담을 ArrayList 생성
     private ArrayList<Double> results = new ArrayList<>();
 
 
@@ -14,6 +15,7 @@ public class Calculator {
         this.operation = operation;
     }
 
+    //계산기 메인기능
     public double calculate(int firstNum, int secondNum) {
         double answer = operation.operate(firstNum, secondNum);
         results.add(answer);
@@ -21,7 +23,7 @@ public class Calculator {
     }
 
 
-
+    //계산결과 출력 메서드
     public void printResults(double result) {
 
         System.out.println("--------------------------------------------------------------------");
@@ -32,6 +34,7 @@ public class Calculator {
 
     }
 
+    // 계산기 종료 or 계산결과삭제관리 메서드
     public boolean onOff(String stop){
 
 
