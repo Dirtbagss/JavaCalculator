@@ -39,7 +39,7 @@ public class App {
 
                     break;
 
-                case '-':
+                case '-': // 뺄셈
                     calculator.setOperation(new SubstractOperation());
                     result = calculator.calculate(firstNum, secondNum);
                     calculator.printResults(result);
@@ -48,7 +48,7 @@ public class App {
 
                     break;
 
-                case '*':
+                case '*': // 곱셈
                     calculator.setOperation(new MultiplyOperation());
                     result = calculator.calculate(firstNum, secondNum);
                     calculator.printResults(result);
@@ -56,7 +56,7 @@ public class App {
 
                     break;
 
-                case '/':
+                case '/': // 나눗셈
                     calculator.setOperation(new DivideOperation());
                     result = calculator.calculate(firstNum, secondNum);
                     calculator.printResults(result);
